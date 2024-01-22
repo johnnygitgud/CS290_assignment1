@@ -14,17 +14,17 @@ doctype: X
  absolute path: X 
  fragment identifier:X  
  image:X
- video, 
+ video: Missing source 
  width, 
  height, 
  alt, 
- table, 
- row, 
- data cell, 
- border, 
- table caption, 
- table header, 
- table body, 
+ table:X 
+ row:x 
+ data cell:X
+ border: X 
+ table caption: X 
+ table header:X 
+ table body:X 
  table footer, 
  spanning columns in my assignment. 
  Can you explain each of these?-->
@@ -34,27 +34,55 @@ doctype: X
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basics Explained</title>
+    <title>HTML Basics By JohnnyGitGud</title>
+    <style>
+        table {border: 3px dashed red;}
+        td {border: 1px solid black;}
+    </style>
+
     </head>
     <body>
         <div id="top">This is the top of the Fragment Identifier.<a href="#bottom">By clicking this you will be redirected to the bottom</a>  of the page</div>
         This text is not inside an element.<br>There is a line break before the start of this sentence and they will be used in these non element texts. The next 6 lines are Headers.
-        <h1>Header 1 has a video<br>
+        <h1>Header 1 has a youtube video that won't load properly but it uses the iframe html element.<br>
             <br>
             <iframe width="560" height="315" src="https://youtu.be/BBJa32lCaaY?si=P7WJMsVALSGP4oXZ" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
 
         </h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
+        <h2>Header 2 will use the video html element.<br>
+        <br>
+        <video>
+
+        </video>
+        </h2>
+        <h3>Header 3 will use the table html element with data cells nested inside each table row element.<br>
+            <br>
+            <table>
+                <tr>
+                    <th>Header For the table</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td>1st Data cell in row 1 col 1</td> 
+                    <td>2nd Data cell in row 1 col 2</td>
+                    <td>3rd Data cell in row 1 col 3</td>
+                </tr>
+            </tbody>
+                <caption> Table Caption</caption>
+            </table>
+            <tfoot>
+                <td colspan="3">Table footer in a table data cell</td>
+            </tfoot>
+        </h3>
         <h4>Header 4</h4>
         <h5>Header 5</h5>
         <h6>Header 6 has an image <br>
             <a href="https://i.imgur.com/MBxIrb2.jpeg">A link to to imgur<br>
-                <img lang="fr" src="https://i.imgur.com/MBxIrb2.jpeg" alt="Not the beset programmer but I'm trying..." width=500>
+                <img lang="fr" src="https://i.imgur.com/MBxIrb2.jpeg"  alt="A silly html coder meme" width="300px" height="300px">
             </a>
            
         </h6>
-        
+        Definitely not the best programmer but I'm trying. . .
         This text is not inside an element.<br>The next two lines of text are part of the paragraph element.
         
         <p>This is a paragraph 1</p>
